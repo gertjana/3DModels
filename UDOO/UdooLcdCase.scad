@@ -1,3 +1,44 @@
+//comment out lines you don't want to see
+
+//printable parts
+
+//rotate([0,-90,-90]) { caseleft(); }
+//rotate([0,90,-90]) { caseright(); }
+//pin();
+
+// complete views
+
+//translate([-85,-56,-25]) {complete();}
+translate([-85,-56,-25]) {explodedview();}
+//translate([-65,-42.5,-10]) {UDOO();}
+//translate([-85,-53,-5]){LCD();}
+
+module complete() {	
+	translate([0,0,30]) { LCD(); }
+	translate([0,0,0]) { UDOO(); }
+	translate([-5,0,0]) { caseleft(); }
+	translate([85,0,0]) { caseright(); }
+	translate([106.5,3.5,-5]) { pin(); }
+	translate([106,35,-5]) { pin(); }	
+	translate([100,82,-5]) { pin(); }
+	translate([3.5,3.5,-5]) { pin(); }
+	translate([24,35,-5]) { pin(); }
+	translate([21,82,-5]) { pin(); }
+}
+
+module explodedview() {
+	translate([0,0,30]) { LCD(); }
+	translate([0,0,0]) { UDOO(); }
+	translate([-25,0,-15]) { caseleft(); }
+	translate([105,0,-15]) { caseright(); }
+	translate([106.5,3.5,-15]) { pin(); }
+	translate([106,35,-15]) { pin(); }	
+	translate([100,82,-15]) { pin(); }
+	translate([3.5,3.5,-15]) { pin(); }
+	translate([24,35,-15]) { pin(); }
+	translate([21,82,-15]) { pin(); }
+}
+
 module UDOO() {
 	difference() {
 		color("darkgreen",a=1.0) { cube([110,85,2]);}
@@ -106,18 +147,4 @@ module caseright() {
 		translate([21,35,-5]) { pin(); }	
 		translate([15,82,-5]) { pin(); }
 	}
-}
-
-translate([-85,-56,-20]) {
-	translate([0,0,30]) { LCD(); }
-	translate([0,0,0]) { UDOO(); }
-	translate([-5,0,0]) { caseleft(); }
-	translate([85,0,0]) { caseright(); }
-	translate([106.5,3.5,-5]) { pin(); }
-	translate([106,35,-5]) { pin(); }	
-	translate([100,82,-5]) { pin(); }
-	translate([3.5,3.5,-5]) { pin(); }
-	translate([24,35,-5]) { pin(); }
-	translate([21,82,-5]) { pin(); }
-
 }
