@@ -4,12 +4,12 @@
 
 //rotate([0,-90,-90]) { caseleft(); }
 //rotate([0,90,-90]) { caseright(); }
-//pin();
+pin();
 
 // complete views
 
 //translate([-85,-56,-25]) {complete();}
-translate([-85,-56,-25]) {explodedview();}
+//translate([-85,-56,-25]) {explodedview();}
 //translate([-65,-42.5,-10]) {UDOO();}
 //translate([-85,-53,-5]){LCD();}
 
