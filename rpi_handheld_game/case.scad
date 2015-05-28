@@ -240,18 +240,16 @@ module buttons_backsupport() {
 
 }
 
-module small_button() {
-
-}
+//joystick();
 
 translate([-28,-45,-15]) {
 	color("lightgrey") { translate([0,2,0]) {
-//		import("/Users/gertjan/Downloads/RaspberryPiRelease2.stl");
+		import("/Users/gertjan/Downloads/RaspberryPiRelease2.stl");
 	} }
-//	translate([0,2,17.1]) { pitft(); }
-//	translate([15,-18,-2]) 	{ sdc(); }
-	color("lightblue") { translate([-57,0,-3]) { top(); } }
-//	translate([-57,0,-3]) { bottom(); }
-//	color("orange") { translate([-25,35,20]) { joystick(); } }
-//	color("orange") { translate([81,35,20]) { buttons(); } }
+	//translate([0,2,17.1]) { pitft(); }
+	//translate([15,-18,-2]) 	{ sdc(); }
+	translate([-57,0,-3]) { top(); }
+	translate([-57,0,-3]) { bottom(); }
+	//color("orange") { translate([-25,35,20]) { joystick(); } }
+	//color("orange") { translate([81,35,20]) { buttons(); } }
 }
